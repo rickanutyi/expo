@@ -1,0 +1,51 @@
+.timer {
+    background-color: rgb(255,255,255,.1);
+    width: fit-content;
+}
+
+.left {
+    gap: 10px;
+}
+
+.right {
+    & > button {
+        width: 300px;
+        height: 80px;
+    }
+
+    border-left: 1px solid #fff;
+    max-width: 50%;
+}
+
+.burger__btn {
+    padding: 0 30px;
+    span {
+        height: 2px;
+        background-color: #000;
+        width: 34px;
+    }
+}
+
+.section_card {
+    // width: 306px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+    &:nth-child(odd) {
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    h4 {
+        margin: 0 0 8px;
+        // width: 300px;
+        text-align: center;
+    }
+}
+
+
+.sections_cards{
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    justify-content: center;
+    gap: 50px
+}

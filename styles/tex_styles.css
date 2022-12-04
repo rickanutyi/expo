@@ -1,0 +1,131 @@
+.text-color-red {
+    color: #FF0700;
+  }
+  
+  .text-color-white {
+    color: #ffffff;
+  }
+  
+  .text-color-blue {
+    color: #0180FF;
+  }
+
+  .text-color-dark-05 {
+    color: #747474
+  }
+
+  .text-color-dark-blue{
+    color: rgba(21, 33, 114, 1);
+  }
+  
+  /* font size */
+  
+  .fs-14 {
+    font-size: 14px;
+  }
+  .fs-24 {
+    font-size: 24px;
+  }
+  
+  .fs-20 {
+    font-size: 20px;
+  }
+  
+  .fs-18 {
+    font-size: 18px;
+  }
+  
+  .fs-40 {
+    font-size: 40px;
+  }
+  
+  .fs-48 {
+    font-size: 48px;
+  }
+  
+  .fs-80 {
+    font-size: 80px;
+  }
+
+  .fs-70 {
+    font-size: 70px;
+  }
+  
+  .fs-60 {
+    font-size: 60px;
+  }
+  
+  .fs-100 {
+    font-size: 100px;
+  }
+  
+  
+  /* weight */
+  
+  .fw-400 {
+    font-weight: 400;
+  }
+  
+  .fw-500 {
+    font-weight: 500;
+  }
+  
+  .fw-600 {
+    font-weight: 600;
+  }
+  
+  .fw-700 {
+    font-weight: 700;
+  }
+  
+  .fw-800 {
+    font-weight: 800;
+  }
+  
+  .fw-900 {
+    font-weight: 900;
+  }
+
+  .lh-60 {
+    line-height: 60px;
+  }
+  
+  .lh-65 {
+    line-height: 65px;
+  }
+  .text-aling-center {
+    text-align: center;
+  }
+
+  .text-aling-end {
+    text-align: end;
+  }
+
+  .text-aling-start {
+    text-align: start;
+  }
+
+  .text-aling-right {
+    text-align: right;
+  }
+
+  .text-aling-left {
+    text-align: left;
+  }
+
+  /* UPPERCASE */
+
+  .text-upper-case {
+    text-transform: uppercase;
+  }
+
+
+
+  .writing-mode-vertical {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+  }
+
+  .nowrap {
+    white-space: nowrap;
+  }

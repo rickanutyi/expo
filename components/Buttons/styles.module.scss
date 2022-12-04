@@ -1,0 +1,20 @@
+.btn {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+
+.bg {
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    width: 110px;
+    height: 110px
+}
+
+.play {
+    position: absolute;
+    z-index: 22;
+    left: 61px;
+    cursor: pointer;
+}
