@@ -9,6 +9,7 @@ import telegram from 'assets/icons/telegram.svg'
 import youtube from 'assets/icons/youtube.svg'
 import uncnoun from 'assets/icons/unoun.svg'
 import med from 'assets/icons/med.svg'
+import web from 'assets/icons/web.svg'
 
 
 const Banner = ({ banner }) => {
@@ -28,7 +29,10 @@ const Banner = ({ banner }) => {
                         <Image className='pointer' src={ru} alt='ru btn' />
                     </div>
                     <div className='flex gap-5'>
-                        <Image className='pointer' src={uncnoun} alt='eng btn' />
+                        <div className='relative' style={{ width: 30, height: 30 }}>
+                            <Image className='pointer' src={uncnoun} alt='eng btn' />
+                            <Image style={{ position: 'absolute', left: 4, top: 3 }} className='pointer' src={web} alt='eng btn' />
+                        </div>
                         <Image className='pointer' src={youtube} alt='ru btn' />
                         <Image className='pointer' src={telegram} alt='ru btn' />
                     </div>

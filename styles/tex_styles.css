@@ -34,6 +34,10 @@
   .fs-18 {
     font-size: 18px;
   }
+
+  .fs-30 {
+    font-size: 30px;;
+  }
   
   .fs-40 {
     font-size: 40px;
@@ -93,23 +97,28 @@
   .lh-65 {
     line-height: 65px;
   }
-  .text-aling-center {
+
+  .lh-100 {
+    line-height: 100px;
+  }
+  
+  .text-align-center {
     text-align: center;
   }
 
-  .text-aling-end {
+  .text-align-end {
     text-align: end;
   }
 
-  .text-aling-start {
+  .text-align-start {
     text-align: start;
   }
 
-  .text-aling-right {
+  .text-align-right {
     text-align: right;
   }
 
-  .text-aling-left {
+  .text-align-left {
     text-align: left;
   }
 
@@ -128,4 +137,8 @@
 
   .nowrap {
     white-space: nowrap;
+  }
+
+  .list-style-none {
+    list-style: none;
   }

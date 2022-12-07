@@ -1,4 +1,7 @@
+import Image from 'next/image';
 import React from 'react';
+
+import arrow from 'assets/icons/arrowdown.svg'
 
 const Program = () => {
     return (
@@ -22,6 +25,11 @@ const Program = () => {
                     <p className='fs-18 text-color-dark-05' style={{ maxWidth: 460 }}>
                         Получи заряд вдохновения! В рамках деловой программы выставки проходят мастер-классы и семинары, презентации и конференции.
                     </p>
+                </div>
+                <div className='flex jfy-center'>
+                    <button className='download-btn'>
+                        <Image src={arrow} alt='arrow icon' />
+                    </button>
                 </div>
             </div>
         </div>

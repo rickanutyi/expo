@@ -10,6 +10,7 @@ import Future from 'components/Future/Future';
 import Program from 'components/Program/Program';
 import Video from 'components/VideoComponent/Video';
 import Footer from 'components/Footer/Footer';
+import Speakers from 'components/Speakers/Speakers';
 
 const index = () => {
 
@@ -32,11 +33,11 @@ const index = () => {
         <div>
             <TopBar />
             <Banner />
-            <Sponsors banner={'banner'} />
+            <Sponsors title={'Спонсоры'} href='/medexpo/participant' />
 
             {/* main sponsor image */}
             <div className='container'>
-                <Image src={main_sponsor} alt='main sponsor' />
+                <Image className={styles.main_sponsor} src={main_sponsor} alt='main sponsor' />
             </div>
 
             {/* о выставке  */}
@@ -69,10 +70,11 @@ const index = () => {
                     }
                 </div>
             </div>
-            <Sponsors banner={'banner'} />
+            <Sponsors title={'Официальная поддержка'} href='/medexpo/oficial_support' />
             <Future />
             <Program />
-            <Sponsors />
+            <Speakers />
+            <Sponsors title={'Информационная поддержка'} href='info_support' />
             <Footer />
         </div>
     );
