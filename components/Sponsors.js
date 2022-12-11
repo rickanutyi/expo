@@ -22,7 +22,7 @@ const Sponsors = ({ title, href }) => {
     return (
         <div className={styles.slider}>
             <div className='container pt-30 pb-30'>
-                <div className='flex jfy-end pb-20'><Link href={href}><span className='fs-24 text-color-dark-05  pt-10'>{title}</span></Link></div>
+                <div className='flex jfy-end pb-20' style={{ pointerEvents: href === 'error' ? 'none' : 'all' }}><Link href={href}><span className='fs-24 text-color-dark-05  pt-10'>{title}</span></Link></div>
                 <Swiper
                     modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
                     spaceBetween={10}

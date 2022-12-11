@@ -3,13 +3,22 @@ import Image from 'next/image';
 import React from 'react';
 import med from 'assets/icons/med.svg'
 import Footer from 'components/Footer/Footer';
+import SecondBlock from './SecondBlock';
+import ThirdBlock from './ThirdBlock';
+import BlockFour from './BlockFour';
 
 const index = () => {
+
+    const styling = {
+        backgroundImage: `url(/bg2.png)`,
+        backgroundPosition: 'bottom',
+        backgroundRepeat: 'no-repeat'
+    }
     return (
         <div>
             <TopBar page='gest' />
-            <div className='bg-color-blue-dark'>
-                <div className="container flex  ">
+            <div className='bg-color-blue-dark bunner-shadow'>
+                <div style={styling} className="container flex  pb-200">
                     <div style={{ maxWidth: '50%' }} className='flex-grow-1 flex flex-column pt-60 pl-30'>
                         <span style={{ maxWidth: 550 }} className='fs-60 lh-100 text-color-white'>
                             ПОСЕТИТЕЛЕМ
@@ -38,6 +47,9 @@ const index = () => {
                     </div>
                 </div>
             </div>
+            <SecondBlock />
+            <ThirdBlock />
+            <BlockFour />
             <Footer />
         </div>
     );

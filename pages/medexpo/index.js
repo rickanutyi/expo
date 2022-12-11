@@ -33,7 +33,7 @@ const index = () => {
         <div>
             <TopBar />
             <Banner />
-            <Sponsors title={'Спонсоры'} href='/medexpo/participant' />
+            <Sponsors title={'Спонсоры'} href='error' />
 
             {/* main sponsor image */}
             <div className='container'>
@@ -74,7 +74,7 @@ const index = () => {
             <Future />
             <Program />
             <Speakers />
-            <Sponsors title={'Информационная поддержка'} href='info_support' />
+            <Sponsors title={'Информационная поддержка'} href='error' />
             <Footer />
         </div>
     );

@@ -19,7 +19,6 @@ const Banner = ({ banner }) => {
         backgroundRepeat: 'no-repeat'
     }
 
-    console.log(banner)
     return (
         <div style={styling} className={classNames(styles.banner, 'bg-color-blue-dark ')}>
             <div className="container p-line-70 pb-40">
