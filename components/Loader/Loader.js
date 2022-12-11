@@ -1,0 +1,23 @@
+import classNames from 'classnames';
+import React from 'react';
+import styles from './loader.module.scss'
+
+const Loader = ({ loading }) => {
+    if (!loading) return null
+    return (
+        <div className={styles.root}>
+            <div className={styles.middle}>
+                <div className={classNames(styles.bar, styles.bar1)}></div>
+                <div className={classNames(styles.bar, styles.bar2)}></div>
+                <div className={classNames(styles.bar, styles.bar3)}></div>
+                <div className={classNames(styles.bar, styles.bar4)}></div>
+                <div className={classNames(styles.bar, styles.bar5)}></div>
+                <div className={classNames(styles.bar, styles.bar6)}></div>
+                <div className={classNames(styles.bar, styles.bar7)}></div>
+                <div className={classNames(styles.bar, styles.bar8)}></div>
+            </div>
+        </div>
+    );
+};
+
+export default Loader;

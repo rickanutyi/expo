@@ -3,3 +3,31 @@
     height: 100vh;
     background-color: #e8e8e8;
 }
+
+.active_link {
+    color: red
+}
+
+.sidebar {
+    max-width: 200px
+}
+
+.sidebar_item {
+    border-top: 1px solid #e8e8e8;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    &:hover {
+        background-color: #fff;
+    }
+}
+
+.active_btn {
+    background-color: lightgreen;
+}
