@@ -8,7 +8,7 @@ const PlayButton = (props) => {
 
     const textPath = `<textPath xlink:href="#circle">открыть видео открыть видео</textPath>`
     return (
-        <div className={classNames(styles.btn)}>
+        <div {...props} className={classNames(styles.btn)}>
             <div style={{ width: '100%', height: '100%' }} className='relative flex aln-center jfy-center'>
                 {/* <span className={classNames(styles.text, 'text-color-white fs-20 fw-900')}>Открыть видео открыть видео</span> */}
                 <Image className={styles.play} src={play} alt='' />

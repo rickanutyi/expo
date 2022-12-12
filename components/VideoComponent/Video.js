@@ -6,23 +6,28 @@ import PlayButton from 'components/Buttons/PlayButton';
 
 const Video = () => {
     const [isVideoRunning, setIsVideoRunning] = useState(false);
+    const [isVideoRunning1, setIsVideoRunning1] = useState(false);
     const style = {
         backgroundImage: 'url(/video.png)',
         backgroundSize: '100% 100%'
+    }
+
+    const playVideo = () => {
+        setIsVideoRunning(true)
     }
     return (
         <div style={{ height: 600 }} className='container flex relative' >
             <div className='flex aln-end overflow-hidden'>
                 <div className={styles.left}>
-                    {isVideoRunning ?
+                    {isVideoRunning1 ?
                         (<iframe
                             width="560"
                             height="310"
                             src="https://www.youtube.com/embed/pq1VLj-_Yhw"
                             title="YouTube video player"
-                            frameborder="0"
+                            frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>)
+                            allowFullScreen></iframe>)
                         : <Image src={video} alt='v' />}
                 </div>
                 <div style={{ maxWidth: 600 }} className='nowrap'>
@@ -31,16 +36,16 @@ const Video = () => {
                 </div>
             </div>
             <div className={styles.right}>
-                {!isVideoRunning ? null : <PlayButton />}
-                {!isVideoRunning ?
+                {isVideoRunning ? null : <PlayButton onClick={playVideo} />}
+                {isVideoRunning ?
                     (<iframe
                         width="100%"
                         height="100%"
                         src="https://www.youtube.com/embed/pq1VLj-_Yhw"
                         title="YouTube video player"
-                        frameborder="0"
+                        frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>)
+                        allowFullScreen></iframe>)
                     : <Image src={video} alt='v' />}
             </div>
         </div>

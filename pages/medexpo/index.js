@@ -11,6 +11,8 @@ import Program from 'components/Program/Program';
 import Video from 'components/VideoComponent/Video';
 import Footer from 'components/Footer/Footer';
 import Speakers from 'components/Speakers/Speakers';
+// import { getServerSideProps } from 'pages/about';
+// import axios from 'axios';
 
 const index = () => {
 
@@ -81,3 +83,10 @@ const index = () => {
 };
 
 export default index;
+
+// export async function getServerSideProps() {
+//     const data = axios.get()
+//     return {
+//         props: 
+//     }
+// }

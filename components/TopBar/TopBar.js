@@ -5,10 +5,21 @@ import logo from 'assets/icons/logo.svg'
 import header_image from 'assets/images/header_img.png'
 import classNames from 'classnames'
 import Link from 'next/link';
+import endpoints from 'pages/api/endpoints';
+import axios from 'axios';
 
 const TopBar = ({ page }) => {
     const activeBtn1 = page === 'participant'
-    const activeBtn2 = page === 'gest'
+    const activeBtn2 = page === 'gest';
+
+    const create = () => {
+        const url = endpoints.common.createLend;
+        axios.post(url, { name: 'medexpo2' })
+            .then(res => {
+                console.log(res)
+            })
+            .catch(console.log)
+    }
 
     return (
         <div className={classNames(styles.header, 'bg-color-blue-dark')}>
@@ -16,7 +27,7 @@ const TopBar = ({ page }) => {
                 <div className={classNames(styles.header__content, 'flex')}>
                     <div className={classNames(styles.left, "flex jfy-start aln-center flex-grow-1")}>
                         <Link href='/medexpo'>
-                            <Image src={logo} alt='logo' />
+                            <Image onClick={create} src={logo} alt='logo' />
                         </Link>
                         <Image src={header_image} alt='logo' />
                     </div>
